@@ -54,27 +54,28 @@ const Navbar = async () => {
 
     {session ? (
                 <>
-                 <div className="border border-pink-600 text-sm bg-white-600 rounded-box w-36">
-                    <Link className='text-white' href={"/api/auth/signout"}>
-                        <div className='flex items-center justify-center text-pink-600'>
+                <div className="dropdown">
+                    <div tabIndex={0} role="button" className="border border-pink-600 text-sm bg-white-600 rounded-box w-36">
+                    <div className='flex items-center justify-center text-pink-600'>
                             Merhaba
                         </div>
-                        <div className='absolute ml-3 top-9 text-pink-600'>
+                        <div className='absolute ml-3 top-4 text-pink-600'>
                             <FaChevronDown />
                         </div>
                         <div className='flex items-center justify-center text-pink-600 font-bold'>
                             {session.user.name?.split(' ')[0]}
                         </div>
                         <div className='flex items-center justify-center text-pink-600'>
-                            Çıkış Yap
-                            <div className='absolute top-9 right-6'>
+
+                            <div className='absolute top-3 right-4'>
                                 <IoPersonOutline size={20} />
                             </div>
                         </div>
-                    </Link>
+                    </div>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><Link className='text-black' href={"/api/auth/signout"}>Çıkış Yap</Link></li>
+                    </ul>
                 </div>
-
-                 
                 </>
            
             ) : (
