@@ -38,10 +38,10 @@ const Navbar = async () => {
         <li>
             <details>
             <summary className='font-bold'>
-                Blog
+                BLOG
             </summary>
             <ul className="p-2 bg-base-100 rounded-t-none">
-                <li><Link href={'#'} className="hover:text-black">BLOG</Link></li>
+                <li><Link href={'#'} className="hover:text-black">Blog</Link></li>
             </ul>
             </details>
         </li>
@@ -72,7 +72,7 @@ const Navbar = async () => {
                             </div>
                         </div>
                     </div>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-36">
                         <li><Link className='text-black' href={"/api/auth/signout"}>Çıkış Yap</Link></li>
                     </ul>
                 </div>
