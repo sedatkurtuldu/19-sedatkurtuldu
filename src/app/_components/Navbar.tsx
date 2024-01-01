@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import { IoPersonOutline } from "react-icons/io5";
+import { FaChevronDown } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { getServerAuthSession } from "~/server/auth";
 
@@ -53,10 +54,13 @@ const Navbar = async () => {
 
     {session ? (
                 <>
-                 <div className="shadow menu menu-sm dropdown-content bg-white-600 rounded-box w-36">
+                 <div className="border border-pink-600 text-sm bg-white-600 rounded-box w-36">
                     <Link className='text-white' href={"/api/auth/signout"}>
                         <div className='flex items-center justify-center text-pink-600'>
                             Merhaba
+                        </div>
+                        <div className='absolute ml-3 top-9 text-pink-600'>
+                            <FaChevronDown />
                         </div>
                         <div className='flex items-center justify-center text-pink-600 font-bold'>
                             {session.user.name?.split(' ')[0]}
