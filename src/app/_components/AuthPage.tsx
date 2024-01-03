@@ -1,8 +1,11 @@
 import React from 'react'
+import Product from './Product'
 
 const AuthPage = () => {
   return (
-    <div>AuthPage</div>
+    <div className='flex justify-center items-center w-3/4'>
+      <Product />
+    </div>
   )
 }
 

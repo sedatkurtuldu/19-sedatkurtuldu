@@ -28,7 +28,7 @@ const Navbar = async () => {
             />
     </Link>
   </div>
-  <div className="flex-none gap-2">
+  <div className="flex-none">
     <ul className="flex text-gray-400 gap-8">
         <li><Link href={'#'} className="hover:text-black hover:border-b-2 hover:border-solid hover:border-black font-bold hover:pb-7">ÜRÜNLER</Link></li>
         <li><Link href={'#'} className="hover:text-black hover:border-b-2 hover:border-solid hover:border-black font-bold hover:pb-7 font-bold">WEHOPİ</Link></li>
@@ -48,8 +48,8 @@ const Navbar = async () => {
             </div>
     </ul>
 
-    <div className="form-control relative">
-        <input type="text" placeholder="Sana nasıl yardımcı olabilirim?" className="input border-2 border-gray-300 pl-8 text-xs rounded-3xl" />
+    <div className="form-control relative mr-2">
+        <input type="text" placeholder="Sana nasıl yardımcı olabilirim?" className="input w-max border bg-inputCustomGray border-gray-300 pl-8 text-base rounded-3xl" />
         <CiSearch className="absolute left-3 top-4 text-gray-600" />
     </div>
 
@@ -91,7 +91,7 @@ const Navbar = async () => {
                         <div className='flex items-center justify-center'>
                             veya kayıt ol !
                         </div>
-                        <div className='absolute top-7 right-3'>
+                        <div className='absolute top-8 right-3'>
                             <IoPersonOutline size={20} />
                         </div>
                     </Link>

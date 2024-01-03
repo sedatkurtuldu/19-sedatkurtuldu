@@ -13,8 +13,9 @@ const config = {
             hostname: "avatars.githubusercontent.com",
             port: "",
             pathname: "/u/**",
-          }
+          },
         ],
+        // domains: ['media.istockphoto.com'],
       },
 };
 
