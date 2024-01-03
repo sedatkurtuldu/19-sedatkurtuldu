@@ -12,7 +12,7 @@ export default async function Home() {
   return (
     <>
     <Navbar />
-    <main className="p-4">
+    <main>
     {session ? (
       <AuthPage />
     ) : (
