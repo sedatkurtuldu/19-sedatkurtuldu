@@ -12,20 +12,26 @@ const Product = async () => {
 
   return (
     <div>
-        <div className='font-bold my-10'>{products.length} Ürün</div>
-        <div>
-            {products.map((product) => (
-                <div className='w-1/3'>
-                    <Image alt={'Ürün ' + product.id} width={1000} height={50} src={product.imageUrl}/>
-                    <div>
-                        {product.title}
+        <div className='flex font-bold my-10 ml-14'>{products.length} Ürün</div>
+        <div className='flex justify-center gap-5'>
+            {products.map((product, index) => (
+                <div key={index}>
+                    <div className='w-80'>
+                     <Image className='object-contain' alt={`Ürün ${index + 1}`} width={480} height={60} src={product.imageUrl}/>
                     </div>
-                    <div>
-                        {product.description}
+                    <div className='mt-6 mb-6'>
+                        <div className='font-bold'>
+                            {product.title}
+                        </div>
+                        <div>
+                            {product.description}
+                        </div>
+                        <div className='flex justify-end mt-3 text-lg font-bold customDodgerBlue'>
+                            {product.price} TL
+                        </div>
                     </div>
-                    <div>
-                        {product.price} TL
-                    </div>
+
+                    
                 </div>
             ))}
         </div>

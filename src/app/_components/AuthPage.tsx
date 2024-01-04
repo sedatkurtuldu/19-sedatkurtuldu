@@ -3,7 +3,7 @@ import Product from './Product'
 
 const AuthPage = () => {
   return (
-    <div className='flex justify-center items-center w-3/4'>
+    <div className='flex justify-center items-center'>
       <Product />
     </div>
   )
