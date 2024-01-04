@@ -12,7 +12,7 @@ const Product = async () => {
 
   return (
     <div>
-        <div className='flex font-bold my-10 ml-14'>{products.length} Ürün</div>
+        <div className='flex font-bold my-10 ml-16'>{products.length} Ürün</div>
         <div className='flex justify-center gap-5'>
             {products.map((product, index) => (
                 <div key={index}>
